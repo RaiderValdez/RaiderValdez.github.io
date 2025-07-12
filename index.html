@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nápoles Autos - Compra y venta de vehículos nuevos y usados. Concesionario digital líder en calidad y confianza.">
+  <meta name="keywords" content="autos, vehículos, compra, venta, usados, nuevos, concesionario, napoles autos">
+  <meta name="Raider Valdez" content="Nápoles Autos">
+  <title>Nápoles Autos</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="shortcut icon" href="icons/NapolesLogoVentana.png" type="image/x-icon" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="icons/NapolesLogoC.png" alt="Logo" width="90" class="me-2" />
+        <span><strong>Nápoles Autos</strong></span>
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/tienda.html">Tiendas</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/noticias.html">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/enlaces.html">Enlaces</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contactos.html">Contactos</a></li>
+        </ul>
+        <button id="toggleDarkMode" class="btn btn-light ms-3">
+          <i class="bi bi-moon-fill"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="text-center py-5" id="main-header">
+    <img src="icons/NapolesLogoC.png" alt="Icono principal" width="280" class="mb-3" />
+    <h1 class="display-4" id="titulo-header"><strong>Nápoles Autos</strong></h1>
+    <p class="lead" id="subtitulo-header">Donde tu próximo vehículo te espera</p>
+  </header>
+
+  <!-- CARRUSEL -->
+<div id="carouselAutos" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Carrusel1.png" class="d-block w-100 img-fluid" alt="Vehiculos disponible" />
+    </div>
+    <div class="carousel-item">
+      <img src="img/Carrusel2.png" class="d-block w-100 img-fluid" alt="Vehiculos disponible" />
+    </div>
+    <div class="carousel-item">
+      <img src="img/Carrusel3.png" class="d-block w-100 img-fluid" alt="Vehiculos disponible" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselAutos" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+ <!-- CARDS -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Vehículos destacados</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4" id="cardsContainer"></div>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section class="container my-5" id="quienes-somos">
+    <h2>¿Quiénes Somos?</h2>
+    <p>En <strong>Nápoles Autos</strong>, somos una plataforma digital especializada en la venta de vehículos en la República Dominicana. Nuestro objetivo es conectar de forma rápida, segura y eficiente a dealers autorizados con compradores interesados en adquirir vehículos nuevos o usados.</p>
+    <p>Funcionamos como un puente confiable entre concesionarios y usuarios. Los dealers registrados pueden subir sus vehículos disponibles a nuestra plataforma, incluyendo fotos, especificaciones, precios y condiciones. Por su parte, los compradores pueden explorar el catálogo, comparar opciones y, si encuentran un vehículo de su interés, contactar directamente al dealer para coordinar una visita, solicitar más información o cerrar la compra.</p>
+    <p>No somos intermediarios en la transacción final, sino facilitadores de un entorno digital donde la oferta y la demanda se encuentran de manera transparente. Nuestra misión es digitalizar y modernizar el proceso de compra y venta de vehículos en el país, brindando una experiencia cómoda, segura y confiable para ambas partes.</p>
+  </section>
+
+  <!-- NUESTROS SERVICIOS -->
+  <section class="container my-5" id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <p>En <strong>Nápoles Autos,</strong> ofrecemos una gama de servicios orientados a facilitar la compra y venta de vehículos:</p>
+    <ul>
+      <li><strong>Publicación de vehículos:</strong> Los dealers pueden registrar su cuenta y subir sus vehículos con todos los detalles necesarios para atraer compradores.</li>
+      <li><strong>Catálogo digital actualizado:</strong> Los usuarios pueden navegar por cientos de vehículos disponibles, filtrando por marca, modelo, año, precio, tipo de combustible, transmisión, entre otros.</li>
+      <li><strong>Contacto directo:</strong> Facilitamos la comunicación entre comprador y vendedor sin intermediarios, lo que agiliza el proceso de negociación.</li>
+      <li><strong>Verificación de dealers:</strong> Solo trabajamos con dealers autorizados, lo que garantiza mayor seguridad y confianza en cada publicación.</li>
+      <li><strong>Soporte al cliente:</strong> Contamos con un equipo de atención para resolver dudas, recibir sugerencias y brindar asistencia técnica.</li>
+    </ul>
+    <p>Nuestro compromiso es ofrecer una plataforma intuitiva, moderna y segura...</p>
+  </section>
+
+  <!-- POR QUÉ ELEGIRNOS -->
+  <section class="container my-5" id="porque-elegirnos">
+    <h2>¿Por qué elegirnos?</h2>
+    <p>Elegir <strong>Nápoles Autos</strong> es optar por una experiencia de compra y venta de vehículos más inteligente, segura y eficiente. Estas son algunas razones para confiar en nosotros:</p>
+    <ul>
+      <li>✅ <strong>Transparencia:</strong> No ocultamos información ni cobramos comisiones ocultas. Toda la información está disponible para que tomes decisiones informadas.</li>
+      <li>✅ <strong>Seguridad:</strong> Solo trabajamos con dealers verificados, lo que reduce el riesgo de fraudes o estafas.</li>
+      <li>✅ <strong>Accesibilidad:</strong> Puedes acceder a nuestra plataforma desde cualquier dispositivo, en cualquier momento.</li>
+      <li>✅ <strong>Variedad:</strong> Contamos con una amplia gama de vehículos de diferentes marcas, modelos y precios.</li>
+      <li>✅ <strong>Soporte humano:</strong> Nuestro equipo está disponible para ayudarte en cada paso del proceso.</li>
+    </ul>
+    <p>Ya seas un comprador o un dealer, Nápoles Autos es tu mejor aliado.</p>
+  </section>
+
+  <!-- POLÍTICA DE PRIVACIDAD -->
+  <div class="text-center mb-5">
+    <button class="btn btn-success" id="btnPolitica" data-bs-toggle="modal" data-bs-target="#modalPolitica">
+      Política de Privacidad
+    </button>
+  </div>
+
+  <div class="modal fade" id="modalPolitica" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content" id="modal-politica">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title">Política de Privacidad</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-start">
+          <p><strong>1. Recopilación de Datos:</strong> Recopilamos información personal como nombre, correo electrónico, número de teléfono y datos del vehículo cuando te registras o publicas un anuncio. Esta información es necesaria para brindarte nuestros servicios.</p>
+          <p><strong>2. Uso de la Información:</strong> Utilizamos tus datos para:</p>
+          <ul>
+            <li>Mostrar tus publicaciones en la plataforma.</li>
+            <li>Facilitar el contacto entre compradores y vendedores.</li>
+            <li>Enviarte notificaciones relevantes sobre tu cuenta o publicaciones.</li>
+            <li>Mejorar nuestros servicios y experiencia de usuario.</li>
+          </ul>
+          <p><strong>3. Protección de Datos:</strong> Implementamos medidas de seguridad técnicas y administrativas para proteger tu información contra accesos no autorizados, pérdida o alteración.</p>
+          <p><strong>4. Compartición de Datos:</strong> No compartimos tu información con terceros sin tu consentimiento, salvo cuando sea requerido por ley o para cumplir con obligaciones legales.</p>
+          <p><strong>5. Derechos del Usuario:</strong> Tienes derecho a acceder, rectificar, cancelar u oponerte al uso de tus datos personales. Puedes ejercer estos derechos escribiéndonos a través de nuestro formulario de contacto.</p>
+          <p><strong>6. Menores de Edad:</strong> Nuestra plataforma no está dirigida a menores de edad. Si eres menor de 18 años, debes contar con la autorización de tus padres o tutores para utilizar nuestros servicios.</p>
+          <p><strong>7. Cambios en la Política:</strong> Nos reservamos el derecho de modificar esta política en cualquier momento. Te notificaremos cualquier cambio relevante a través de nuestros canales oficiales.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success"
+            data-bs-dismiss="modal"
+            onmouseover="this.style.backgroundColor='gray'"
+            onmouseout="this.style.backgroundColor='green'">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="text-center mt-5 p-4" style="background-color: #740000; color: white;">
+  <div class="mb-3">
+    <a href="https://facebook.com/raider.valdez.9" target="_blank" class="me-3 text-white">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://instagram.com/aroon_valdez/" target="_blank" class="me-3 text-white">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="mailto:rv23-1099@unphu.edu.do" title="Enviar correo">
+  <i class="bi bi-envelope-fill fs-5 text-white"></i>
+</a>
+  </div>
+  <div>
+    <small>© Since 2025 | Nápoles Autos</small>
+  </div>
+</footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
