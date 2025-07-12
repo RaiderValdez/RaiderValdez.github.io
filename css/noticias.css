@@ -1,0 +1,52 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar {
+  background-color: #740000;
+}
+
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+
+.dark-mode #navbar {
+  background-color: #3b0000 !important;
+}
+
+
+.card {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.hover-card:hover {
+  transform: scale(1.03);
+}
+
+
+.card-text.full {
+  display: block;
+}
+
+.card-text.collapsed {
+  display: none;
+}
+
+.btn-toggle {
+  margin-top: 10px;
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#toggleDarkMode {
+  z-index: 1050;
+}

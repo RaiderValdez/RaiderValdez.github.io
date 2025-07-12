@@ -1,0 +1,29 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar {
+  background-color: #740000;
+}
+
+header {
+  background-color: #f8f9fa;
+}
+
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+
+.dark-mode #navbar {
+  background-color: #3b0000 !important;
+}
+
+h2 {
+  color: #740000;
+}
+
+ul li {
+  margin-bottom: 8px;
+}

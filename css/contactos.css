@@ -1,0 +1,39 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar {
+  background-color: #740000;
+}
+
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+
+.dark-mode #navbar {
+  background-color: #3b0000 !important;
+}
+
+form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+}
+
+.dark-mode form {
+  background: #1e1e1e;
+  box-shadow: 0 0 8px rgb(255 255 255 / 0.1);
+}
+
+button:hover {
+  filter: brightness(1.2);
+  transition: all 0.2s;
+}
+
+/* Hacer que el cursor cambie a pointer en todo el enlace */
+a.d-flex.align-items-center.text-decoration-none {
+  cursor: pointer;
+}

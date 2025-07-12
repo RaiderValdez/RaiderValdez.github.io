@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #000;
+  transition: all 0.3s;
+}
+
+#navbar {
+  background-color: #740000;
+}
+
+header {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+
+.dark-mode #navbar {
+  background-color: #3b0000 !important;
+}
+
+.dark-mode header {
+  background-color: #1c1c1c !important;
+  color: #ffffff !important;
+}
+
+.dark-mode #titulo-header,
+.dark-mode #subtitulo-header {
+  color: #ffffff !important;
+}
+
+.dark-mode .modal-content {
+  background-color: #1a1a1a !important;
+  color: #f0f0f0 !important;
+}
+
+#btnPolitica {
+  background-color: green;
+  color: white;
+}
+
+#btnPolitica:hover {
+  background-color: gray;
+  color: white;
+}
+
+.card .card-more-info {
+  display: none;
+}
+
+.card.expanded .card-more-info {
+  display: block;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card.expanded .card-short-info {
+  display: none;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#quienes-somos h2:hover,
+#servicios h2:hover,
+#porque-elegirnos h2:hover {
+  color: #197d1c;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Variables colores para modo claro */
+:root {
+  --color-fondo: #fff;
+  --color-texto: #000;
+  --color-nav-bg: #740000;
+  --color-boton-politicas: #197d1c;
+}
+
+/* Variables para modo oscuro */
+body.dark {
+  --color-fondo: #121212;
+  --color-texto: #e4e4e4;
+  --color-nav-bg: #4a0000;
+  --color-boton-politicas: #2e8b57;
+}
+
+/* Aplica colores */
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+nav {
+  background-color: var(--color-nav-bg) !important;
+}
+
+/* Si tienes botones de políticas, usa variable */
+.btn-politicas {
+  background-color: var(--color-boton-politicas);
+  color: white;
+}
+.btn-politicas:hover {
+  background-color: gray;
+  color: white;
+}
+
+#carouselAutos img {
+  max-height: 500px; /* o el valor que desees */
+  object-fit: contain; /* para que la imagen se ajuste sin cortar */
+  margin: 0 auto;
+}
